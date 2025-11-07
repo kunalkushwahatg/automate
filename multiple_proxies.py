@@ -52,7 +52,7 @@ class MultipleBrowserTest:
     def _generate_random_modules(self):
         """Generate fixed module selection: listening, writing, speaking (excluding reading)."""
         # Always use these three modules for all sessions
-        selected = ['listening', 'reading']
+        selected = ['listening', 'reading', 'writing', 'speaking']
         return selected
     
     async def handle_cookie_consent(self):
@@ -906,7 +906,7 @@ async def main():
     """Main entry point."""
     
     # Configuration
-    start_url = 'https://www.goethe.de/ins/in/en/spr/prf/gzb1.cfm?examId=0958CFDE858EF38FDB8B53C07ECC51007C87DD7BBCC1A7E65BAB0EAFD4CB9FAFDE9EBDC98B447D4ADEEEF8D355D71ED0EEF286CB568D54CFA12B8110988598ED'
+    start_url = 'https://www.goethe.de/ins/in/en/spr/prf/gzb2.cfm?examId=0A0EC9DBD18FFD8F8A8B01CA789E5D017D83D628B8C6ADEB5AF505A884969AF4DE9EEA998D172E4ADBBCF5DE50821980EAAA889004855598AF2D87439C81CCEA'
     headless = True  # Always starts headless, shows GUI on success
     gui_display_seconds = 200  # How many seconds to display GUI on success
     
